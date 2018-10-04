@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Player</title>
+</head>
+<body>
+ <form action = "addPlayersServlet" method="post">
+ Team: <input type ="text" name = "team">
+ Name: <input type = "text" name = "name">
+ Owner: <input type = "text" name = "owner">
+ <input type = "hidden" name = "id" value="${playersToEdit.id}">
+ <input type = "submit" value="Add Player">
+</form>
+<a href = "viewAllPlayersServlet">View complete list</a><br />
+<a href = "searchOwner.html">Search on player via owner</a><br />
+<a href = "index.html"> Back to main menu</a><br />
+</body>
+</html>
